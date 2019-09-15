@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/screamdemon.wav-a82012fe3b117d47b16d968dc1a053c8.sample"
+
+[deps]
+
+source_file="res://assets/sound/screamdemon.wav"
+dest_files=[ "res://.import/screamdemon.wav-a82012fe3b117d47b16d968dc1a053c8.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

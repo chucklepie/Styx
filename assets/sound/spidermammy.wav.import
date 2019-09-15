@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/spidermammy.wav-0497092e60957f907c86b55a803a22e3.sample"
+
+[deps]
+
+source_file="res://assets/sound/spidermammy.wav"
+dest_files=[ "res://.import/spidermammy.wav-0497092e60957f907c86b55a803a22e3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/screamman.wav-2be291f4b9e69c769dcf5b7edb817585.sample"
+
+[deps]
+
+source_file="res://assets/sound/screamman.wav"
+dest_files=[ "res://.import/screamman.wav-2be291f4b9e69c769dcf5b7edb817585.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

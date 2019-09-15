@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/spiderdemon.wav-86c01c207bf9b3acb6da2c071bd5dce0.sample"
+
+[deps]
+
+source_file="res://assets/sound/spiderdemon.wav"
+dest_files=[ "res://.import/spiderdemon.wav-86c01c207bf9b3acb6da2c071bd5dce0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
