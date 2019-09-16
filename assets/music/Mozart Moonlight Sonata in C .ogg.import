@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Mozart Moonlight Sonata in C .ogg-cfa181d47aa55495761f3a29c87fc801.oggstr"
+
+[deps]
+
+source_file="res://assets/music/Mozart Moonlight Sonata in C .ogg"
+dest_files=[ "res://.import/Mozart Moonlight Sonata in C .ogg-cfa181d47aa55495761f3a29c87fc801.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
