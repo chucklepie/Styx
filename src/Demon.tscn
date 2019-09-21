@@ -1,31 +1,30 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://assets/sprites/man_walk1.png" type="Texture" id=1]
-[ext_resource path="res://assets/sprites/man_walk2.png" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/demon2.png" type="Texture" id=1]
+[ext_resource path="res://assets/sprites/demon1.png" type="Texture" id=2]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 1 ) ],
-"loop": false,
+"loop": true,
 "name": "idle",
 "speed": 0.0
 }, {
-"frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
-"loop": true,
-"name": "walk",
+"frames": [ ExtResource( 2 ) ],
+"loop": false,
+"name": "active",
 "speed": 5.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 11, 12 )
+extents = Vector2( 13.8499, 16 )
 
-[node name="Player" type="KinematicBody2D"]
-collision_mask = 30
+[node name="Demon" type="StaticBody2D"]
+collision_layer = 4
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
-animation = "walk"
-frame = 1
+animation = "active"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 2 )
