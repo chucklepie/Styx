@@ -1,8 +1,12 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://assets/sound/spidermammy.wav" type="AudioStream" id=1]
+[ext_resource path="res://assets/sound/splat.wav" type="AudioStream" id=2]
 
 [node name="SFX" type="Node"]
 
-[node name="MammySpawn" type="AudioStreamPlayer2D" parent="."]
+[node name="MammySpawn" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 1 )
+
+[node name="SpiderDead" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
