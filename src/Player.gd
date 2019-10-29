@@ -5,12 +5,41 @@ onready var last_position = position
 const PLAYER_SPEED = 100
 
 var current_animation=""
+var beam_duration=10
+var cooldown=0.1
+var can_shoot=true
+var hit=null
 
 func _ready() -> void:
-	pass # Replace with function body.
+	pass
+	#$Laser.remove_point(1)
 
 func _physics_process(delta: float) -> void:
+	$Laser.remove_point(1)
 	MovePlayer(delta)
+	GunCheck()
+	
+func GunCheck():
+	#ensure length is clipped to the nearest collision
+	var gunsize
+	var hitobject
+	var hitpos
+	var tilepos
+	if $GunRaycast.is_colliding():
+		hitpos=$GunRaycast.get_collision_point()
+		hitobject=$GunRaycast.get_collider()
+		get_node("../Label").text="%s,%s" % [str(hitpos),hitpos]
+		$Laser.add_point(transform.xform_inv((hitpos)))
+		#$Laser.add_point(hitpos)
+	if hitobject is TileMap:
+		tilepos=get_parent().get_node("Level01").world_to_map(hitpos)
+		print(hitpos-position)
+		#print(tilepos)
+		#print(hitpos)
+	else:
+		gunsize=$GunRaycast.get_collision_point()-$GunPosition.position
+		print(hitobject.name)
+		print(gunsize.length())
 	
 func MovePlayer(delta: float):
 	var x = 0

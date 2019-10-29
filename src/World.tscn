@@ -53,4 +53,11 @@ __meta__ = {
 
 [node name="Sprite" type="Sprite" parent="Area2D"]
 texture = ExtResource( 9 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 160.0
+margin_top = 416.0
+margin_right = 512.0
+margin_bottom = 430.0
+text = "hello"
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

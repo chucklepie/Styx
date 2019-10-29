@@ -35,6 +35,7 @@ func _process(delta: float) -> void:
 	collision = move_and_collide(movement*delta*real_speed)
 	if collision:
 		current_direction = -1
+		
 	
 func get_new_direction():
 	var d = randi()%4

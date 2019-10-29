@@ -29,3 +29,17 @@ frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 2 )
+
+[node name="GunRaycast" type="RayCast2D" parent="."]
+position = Vector2( 12, 0 )
+enabled = true
+cast_to = Vector2( 500, 0 )
+collision_mask = 15
+
+[node name="Laser" type="Line2D" parent="."]
+position = Vector2( -11, 0 )
+scale = Vector2( 1.1, 1 )
+points = PoolVector2Array( 20, 0, 100, 0 )
+width = 2.0
+default_color = Color( 1, 0.4, 0.454902, 1 )
+texture_mode = -1918390465
